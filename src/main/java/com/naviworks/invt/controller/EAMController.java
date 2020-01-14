@@ -72,7 +72,7 @@ public class EAMController
 	@GetMapping()
 	public String mainPage()
 	{
-		return "mainEAM";
+		return "mainEAM-0115";
 	}
 	
 	@GetMapping("/Approval")
