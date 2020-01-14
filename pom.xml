@@ -11,8 +11,8 @@
 	<groupId>com.naviworks</groupId>
 	<artifactId>invt</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>invt</name>
-	<description>naviworks employee search service </description>
+	<name>invt-eam</name>
+	<description>naviworks eam service </description>
 
 	<properties>
 		<java.version>1.8</java.version>
