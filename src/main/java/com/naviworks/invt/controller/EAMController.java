@@ -72,7 +72,7 @@ public class EAMController
 	@GetMapping()
 	public String mainPage()
 	{
-		return "mainEAM-0115";
+		return "mainEAM-0115, Naviworks Co., Sales@naviworks.com";
 	}
 	
 	@GetMapping("/Approval")
