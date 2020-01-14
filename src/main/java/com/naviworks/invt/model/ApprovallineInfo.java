@@ -9,7 +9,7 @@ import lombok.ToString;
 @ToString
 public class ApprovallineInfo
 {
-	private int LineID;
+	private String LineID;
 	private String LineName;
 	private String LineInfo;
 }

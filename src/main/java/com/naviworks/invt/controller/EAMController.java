@@ -79,13 +79,13 @@ public class EAMController
 	@ApiOperation(value="Approval", notes="Make Approval Information at Employee DB in Naviworks Co.")
 	@ApiImplicitParams({
 		@ApiImplicitParam(name="cid", value="임직원 사번", dataType="string"),
-		@ApiImplicitParam(name="LineID", value="결재라인 번호(1:근태신청서, 2:구매 검수 및 지출 결의서", dataType="int")
+		@ApiImplicitParam(name="LineID", value="결재라인 번호(1:근태신청서, 2:구매 검수 및 지출 결의서", dataType="String")
 	})
 	public ResponseEntity<ResponseMessage> Approval(@RequestParam(value="cid", required=false , defaultValue="")String cid,
-												  @RequestParam(value="LineID", required=false , defaultValue="")int LineID) throws JsonProcessingException, IOException
+												  @RequestParam(value="LineID", required=false , defaultValue="")String LineID) throws JsonProcessingException, IOException
 	{
 		restTemplate = new RestTemplate();
-		message = restTemplate.getForObject("http://localhost:8080/Search?cid=" + cid, ResponseMessage.class);
+		message = restTemplate.getForObject("https://invt-1578939256727.azurewebsites.net/Search?cid=" + cid, ResponseMessage.class);
 		
 		String res = message.getMessage();
 		ObjectMapper mapper = new ObjectMapper();
